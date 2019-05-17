@@ -1,8 +1,13 @@
 class Test 
-  def initialize
-   puts "Hello, world!"
+  def initialize(name)
+   @msg = "Hello, #{name}!"
+  end
+
+  def display
+    puts @msg
   end
 end
 
 # initialize object
-Test.new
+obj = Test.new("Vasilios")
+obj.display
